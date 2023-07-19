@@ -1,0 +1,163 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alura Geek</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/general.css">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/footer.css">
+    </head>
+
+    <body>
+
+        <header >
+
+            <div class="merde">
+                <div class="branding-search">
+                    <div class="branding">
+                        <img src="ressource/icon_joystick.svg" alt="icon joystick">
+                        <img src="ressource/e-logo.svg" alt="">
+                    </div>
+
+                    <div class="search">
+                        <input type="text" placeholder="Que deseas buscar?">
+                        <img src="ressource/Icon_search.svg" alt="">
+                    </div>
+                </div>
+
+                <button id="login">Login</button>
+            </div>
+
+            <div class="promotion">
+                <h3>Febrero Promocional</h3>
+                <h5>Productos seleccionados con 33% de descuento</h5>
+                <button>Ver Consolas</button>
+            </div>
+
+        </header>
+
+        <main>
+            <div  class="content">
+                 <div class="categories" id="div-category">
+
+                  <!--<div class="category-group">
+                        <div class="header-category">
+                            <h4 class="title-category">Todos los productos</h4>
+                            <a style="margin-left: 20px" href="#"> Agregar producto </a>
+                        </div>
+
+                        <div class="items" id="div-items">
+
+                            <div class="item">
+                                <div class="delete-edit" >
+                                    <button btn="delete"><img src="ressource/delete.svg" alt="delete"></button>
+                                    <button><img src="ressource/edit.svg" alt="edit"></button>
+                                </div>
+                                <img src="ressource/sonic.png" alt="product">
+                                <h6>Sonic producto</h6>
+                                <h5>$ 600. 00</h5>
+                                <a href="#">Ver Producto</a>
+                            </div>
+
+                        </div>
+                    </div>-->
+
+
+
+                </div>
+
+
+
+                <div class="login-modal">
+                    <form id="form" action="#">
+                        <h4>Iniciar Sesión</h4>
+                        <img src="ressource/close.svg" alt="close login">
+                        <label for="email"></label>
+                        <input id="email" type="text" placeholder="Escribe su correo electronico">
+                        <label for="password"></label>
+                        <input id="password" type="password" placeholder="Escribe su contraseña electronico">
+                        <input type="submit" value="Enviar">
+                         <p id="statut"></p>
+                    </form>
+
+                </div>
+
+                <div class="add-product-modal">
+                    <form id="form-add-product" action="#">
+                        <h4>Agregar productos</h4>
+                        <img src="ressource/close.svg" alt="close login" close="add product">
+                        <label for="img"></label>
+                        <input id="img" type="url" placeholder="url image" inp="url-img">
+                        <label for="category"></label>
+                        <input id="category" type="text" placeholder="category" inp="cat">
+                        <label for="nombre"></label>
+                        <input id="nombre" type="text" placeholder="nombre" inp="name">
+                        <label for="description"></label>
+
+                        <input id="price" type="text" placeholder="precio" inp="price">
+                        <label for="price"></label>
+
+
+                        <textarea id="description" rows="5" placeholder="Description" inp="desc"></textarea>
+                        <input type="submit" value="Añadir">
+                        <p></p>
+                    </form>
+
+                </div>
+
+
+            </div>
+
+
+
+            <footer >
+                <div class="containner">
+
+                    <div class="branding-about-us">
+                        <div class="branding">
+                            <img src="ressource/icon_joystick.svg" alt="icon joystick">
+                            <img src="ressource/e-logo.svg" alt="">
+                        </div>
+
+                        <div class="about-us">
+                            <a href="#">Quien somos</a>
+                            <a href="#">Politica de privcidad</a>
+                            <a href="#">Programa de fidelidad</a>
+                            <a href="#">Nuevas tiendas</a>
+                            <a href="#">Quiero ser franquiciado</a>
+                            <a href="#">Anúncie aquí</a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form action="" id="form-about-us">
+                            <h6>Hable con nosotros</h6>
+                            <input type="text" placeholder="Nombre"  columns="700">
+                            <textarea placeholder="Escribe su mensaje" name="" rows="4"></textarea>
+                            <input type="submit" value="Enviar mensaje">
+                        </form>
+                    </div>
+
+                </div>
+
+
+                <div id="developper">
+                    <h5>Desarollo por Benderson Phanor</h5>
+                    <h6>2023</h6>
+                </div>
+            </footer>
+        </main>
+
+    </body>
+
+    <script type="module" src="logic/script.js"></script>
+      <script type="module" src="logic/controller_product.js"></script>
+     <script  src="logic/login.js"></script>
+
+    </html>

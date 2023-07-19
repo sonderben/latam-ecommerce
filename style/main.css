@@ -1,0 +1,154 @@
+.content{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-height: 100px;
+    overflow: hidden;
+}
+.categories {
+
+    margin: 20px 0%;
+    width: fit-content;
+}
+.items{
+    display: flex;
+    gap: 10px;
+    width: fit-content;
+    margin-bottom: 7%;
+}
+.header-category{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-category>a>img{
+    margin-bottom: -3px;
+}
+.header-category > a{
+    text-decoration: none;
+    color: var(--azul-100);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+
+}
+.item h6 {
+    color: var(--preto-100);
+    font-family: Raleway;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.item img[alt="product"]{
+    width: 12.33vw;
+    height: 15vw;
+    min-width: 100%;
+    min-height: 100px;
+}
+
+.item h5 {
+    color: var(--preto-100);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 100%;
+    margin: 0;
+    text-align: start;
+}
+.item a{
+text-decoration: none;
+color: var(--azul-100);
+}
+
+.delete-edit{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: 20px;
+    margin-top: -20px;
+}
+.delete-edit>button>img{
+    width: 20px;
+    height: 20px;
+}
+
+.delete-edit>button:hover{
+    background-color: #464646;
+}
+
+
+
+
+.login-modal, .add-product-modal{
+
+    justify-content: center;
+    width: 60%;
+    position: fixed;
+
+    z-index: 10;
+    right: 20%;
+
+}
+.login-modal{
+    display: none;
+    left: 20%;
+    top: 30%;
+}
+.add-product-modal{
+    display: none;
+    top: 10%;
+    width: 100%;
+    left: 20%;
+}
+
+.login-modal> form, .add-product-modal> form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    border-radius: 20px;
+    padding: 30px;
+    background:  #F5F5F5;
+}
+ .add-product-modal > form > input{
+ }
+.login-modal > form > input, .add-product-modal > form > input,.add-product-modal>form>textarea{
+    width: 80%;
+    padding: 10px 5px;
+    background-color: white;
+    margin-top: 30px;
+    border: none;
+}
+.login-modal > form > input[type ="submit"]{
+background-color: var(--azul-100);
+}
+img[alt="close login"]{
+    width: 20px;
+    height: auto;
+
+    top: 20px;
+    right: 20px;
+    color: red;
+}
+
+img[alt="close login"]:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.4, 1.4);
+    background-color: rgba(157, 93, 93,0.2);
+}
+   
+
+@media only screen and (max-width: 668px)  {
+    .login-modal{
+
+        width: 90%;
+        top: 30%;
+        right: 5%;
+        left: 5%;
+    }
+}

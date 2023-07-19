@@ -1,0 +1,40 @@
+.detail{
+    display: flex;
+    padding: 0 10%;
+}
+.detail-about{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.detail>img{
+    width: 22vw;
+    height: 24vw;
+}
+.detail-about>h5{
+    padding: 0;
+    margin: 0;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.detail-about>h6:nth-child(2){
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.detail-about>h6:nth-child(3){
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

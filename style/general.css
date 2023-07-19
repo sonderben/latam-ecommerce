@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --azul-100: #2A7AE4;
+    --preto-100: #464646;
+    --preto-100: #464646;
+}

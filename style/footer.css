@@ -1,0 +1,94 @@
+footer{
+    background: var(--azul-10, #EAF2FD);
+    
+}
+
+
+footer> .containner{
+    padding: 10px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: start;
+}
+
+.branding-about-us{
+    display: flex;
+    gap: 20%;
+    align-items: start;
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+}
+.about-us > a{
+    color: black;
+    text-decoration: none;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.about-us > a:hover{
+    text-decoration: underline;
+}
+.about-us > input{
+    background-color: white;
+}
+#form-about-us > h6{
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#form-about-us{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 400px;
+    
+}
+
+#developper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+@media only screen and (max-width: 668px) {
+    .branding-about-us{
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+        align-items: start;
+    }
+
+    #form-about-us{
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    .containner{
+       flex-direction: column;
+       
+    }
+    #form-about-us{
+        width: 200px;
+    }
+    .branding-about-us{
+        
+    }
+}
